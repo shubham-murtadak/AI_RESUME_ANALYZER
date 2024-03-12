@@ -1,5 +1,11 @@
 # Resume Analyzer
 
+## App demo
+
+https://www.loom.com/share/575c0c96a345431ba4a433befafddfeb?sid=6dac250b-a6c7-451f-af53-077f5767fff9
+
+</br>
+
 Resume Analyzer is a Streamlit web application designed to assist users in analyzing resumes. It allows users to upload a resume in PDF format, and based on the uploaded resume, it provides summarized information, strengths, weaknesses, and job role suggestions.
 
 ## Features
