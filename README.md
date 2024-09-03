@@ -9,7 +9,7 @@ Resume Analyzer is a Streamlit web application designed to assist users in analy
 ## Features
 
 - **Upload Resume**: Users can upload their resume in PDF format.
-  ![Upload Resume](images/upload_resume.png)
+  ![Upload Resume](screenshots/summary.png)
 - **Summarize**: The app summarizes the content of the uploaded resume using OpenAI Codex.
   ![Summarize](images/summarize.png)
 - **Strengths Extraction**: Extracts strengths from the summarized text.
