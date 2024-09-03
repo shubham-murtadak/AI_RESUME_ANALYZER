@@ -1,4 +1,5 @@
 # AI_RESUME_ANALYZER
+
 ## App Demo
 
 </br>
@@ -8,23 +9,28 @@ Resume Analyzer is a Streamlit web application designed to assist users in analy
 ## Features
 
 - **Upload Resume**: Users can upload their resume in PDF format.
+  ![Upload Resume](images/upload_resume.png)
 - **Summarize**: The app summarizes the content of the uploaded resume using OpenAI Codex.
+  ![Summarize](images/summarize.png)
 - **Strengths Extraction**: Extracts strengths from the summarized text.
+  ![Strengths Extraction](images/strengths.png)
 - **Weaknesses Extraction**: Extracts weaknesses from the summarized text.
+  ![Weaknesses Extraction](images/weaknesses.png)
 - **Job Role Suggestions**: Provides suggestions for job roles based on the resume.
+  ![Job Role Suggestions](images/job_role_suggestions.png)
 
 ## Installation
 
 1. Clone this repository:
 
     ```bash
-    https://github.com/Sagarkeshave/ai_resume_analyze.git
+    git clone https://github.com/Sagarkeshave/ai_resume_analyze.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd resume-analyze
+    cd ai_resume_analyze
     ```
 
 3. Install the required dependencies:
@@ -33,7 +39,7 @@ Resume Analyzer is a Streamlit web application designed to assist users in analy
     pip install -r requirements.txt
     ```
 
-4. Obtain google api key and enter when prompted.
+4. Obtain a Google API key and enter it when prompted.
 
 ## Usage
 
@@ -49,4 +55,5 @@ Resume Analyzer is a Streamlit web application designed to assist users in analy
 
 4. Click the "Summarize" button to generate a summary of your resume.
 
-5. Likewise summarized text, extracted strengths, weaknesses, and job role suggestions.
+5. Review the summarized text, extracted strengths, weaknesses, and job role suggestions.
+
