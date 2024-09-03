@@ -3,25 +3,30 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 import streamlit as st
 from streamlit_option_menu import option_menu
 from streamlit_extras.add_vertical_space import add_vertical_space
-from helper import resume_analyzer
+from Source.source import resume_analyzer
 import warnings
 warnings.filterwarnings('ignore')
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-
+google_api_key=os.getenv('GEMINI_API_KEY')
+print(google_api_key)
 # page configuration
+
+
 st.set_page_config(page_title='Resume Analyzer AI', layout="wide")
 
 # page header transparent color
-page_background_color = """
+page_background_color ="""
 <style>
-
 [data-testid="stHeader"] 
 {
 background: rgba(0,0,0,0);
 }
-
 </style>
 """
+
 st.markdown(page_background_color, unsafe_allow_html=True)
 
 # title and position
@@ -36,11 +41,11 @@ pdf = st.file_uploader(label='', type='pdf')
 if pdf is not None:
     st.write("Resume Uploaded Successfully!")
 
-    time.sleep(3)
-    google_api_key = st.text_input(label='Google API key', type='password')
-    st.spinner("Connecting")
+    # time.sleep(3)
+    # google_api_key = st.text_input(label='Google API key', type='password')
+    # st.spinner("Connecting")
 
-    time.sleep(10)
+    # time.sleep(10)
 
     llm = ChatGoogleGenerativeAI(model="gemini-pro", google_api_key=google_api_key)
 
